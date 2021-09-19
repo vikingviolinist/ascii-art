@@ -89,7 +89,7 @@ All chains in `ascii-art` can be called in one of 3 ways. In this example we cha
 <details><summary> Callback </summary><p>
 
 ```javascript
-    art.font("Some Text", 'doom', (err, rendered)=>{
+    art.font("Some Text", 'Doom', (err, rendered)=>{
         //if err, err is the error that occured
         //if !err rendered is the ascii
     });
@@ -100,7 +100,7 @@ All chains in `ascii-art` can be called in one of 3 ways. In this example we cha
 <details><summary> Promise </summary><p>
 
 ```javascript
-    art.font("Some Text", 'doom')
+    art.font("Some Text", 'Doom')
        .then((rendered)=>{
            //rendered is the ascii
        })).catch((err)=>{
@@ -114,7 +114,7 @@ All chains in `ascii-art` can be called in one of 3 ways. In this example we cha
 
 ```javascript
     try{
-        let rendered = await art.font("Some Text", 'doom').completed()
+        let rendered = await art.font("Some Text", 'Doom').completed()
         //rendered is the ascii
     }catch(err){
         //err is an error
@@ -180,7 +180,7 @@ Change "Some Text" to be formatted using the `doom.flf` font, which it will load
 <details><summary> JS </summary><p>
 
 ```javascript
-    art.font("Some Text", 'doom', true) //returns String
+    art.font("Some Text", 'Doom', true) //returns String
 ```
 
 </p></details></td><td valign="top">
